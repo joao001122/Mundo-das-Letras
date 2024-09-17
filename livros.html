@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo das Letras</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="imagens/logo.png" type="imagem/png">
+    <script async src="loja.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <form method="get" action="index.html">
+
+            <div>
+                <input type="image" src="imagens/logo.png" alt="submit" height="150px" width="200px">
+            </div>
+
+            <div class="pesquisa">
+                <input type="text" name="pesquisa" id="pesquisa" autocomplete="off"
+                    placeholder="Digite oque você procura">
+            </div>
+
+            <div class="cont_car_conta">
+
+                <div class="a">
+                    <a href="conta.html"><img src="imagens/conta.png" width="50" height="50"></a>
+                    <p class="pconta">&nbsp;Conta</p>
+                </div>
+
+                <div class="a">
+                    <a href="index.html"><img src="imagens/support.png" width="50" height="50"></a>
+                    <p class="psuporte">Suporte</p>
+                </div>
+
+                <div class="a">
+                    <a onclick="openPopup()"><img src="imagens/shopping-cart.png" width="50" height="50"></a>
+                    <p class="pcarrinho">Carrinho</p>
+                </div>
+
+            </div>
+
+        </form>
+
+    </header>
+
+    <nav>
+        <a href="agenda.html">AGENDAS E PLANNERS</a>
+        <a href="caderno.html">CADERNOS</a>
+        <a href="canetas.html">CANETAS</a>
+        <a href="livros.html">LIVROS</a>
+        <a href="decoracao.html">DECORAÇÃO</a>
+        <a href="lapis.html">LAPIS</a>
+        <a href="presentes.html">PRESENTES</a>
+    </nav>
+
+
+    <main>
+        <div class="imagem">
+            <img src="imagens/plano_de_fundo.png">
+        </div>
+        <div class="main-selecion">
+
+            <div class="info">
+                <p><big>Novidades</big>&nbsp;&nbsp;Não perca esta oportunidade</p>
+            </div>
+            <!--produto linha 1 -->
+
+            <div class="main">
+                <div class="movie-product">
+                    <img src="imagens/livro1.jfif" class="product-image" height='200px' width="200px">
+                    <p class="product-title">Abas De Silicone Meus Primeiros Animais Todolivro</p>
+                    <div class="product-price-container">
+                        <p class="product-price">R$ 59,90</p>
+                        <button class="button-hover-background">Comprar</button>
+                    </div>
+                </div>
+                <div class="movie-product">
+                    <img src="imagens/livro2.webp" class="product-image" height='200px' width="200px">
+                    <p class="product-title">Meu Primeiro Dicionário Ilustrado Todolivro</p>
+                    <div class="product-price-container">
+                        <p class="product-price">R$ 59,90</p>
+                        <button class="button-hover-background">Comprar</button>
+                    </div>
+                </div>
+                <div class="movie-product">
+                    <img src="imagens/livro3.webp" class="product-image" height='200px' width="200px">
+                    <p class="product-title">Abas De Silicone Meus Primeiros Veículos Todolivro</p>
+                    <div class="product-price-container">
+                        <p class="product-price">R$ 59,90</p>
+                        <button class="button-hover-background">Comprar</button>
+                    </div>
+                </div>
+                <div class="movie-product">
+                    <img src="imagens/livro4.jfif" class="product-image" height='200px' width="200px">
+                    <p class="product-title">Meu Primeiro Livro De Atividades Cores Todolivro</p>
+                    <div class="product-price-container">
+                        <p class="product-price">R$ 34,90</p>
+                        <button class="button-hover-background">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+    
+                <section class="container">
+                    <button class="close-popup-btn" onclick="closePopup()">X</button>
+                    <h2 class="section-title">Carrinho</h2>
+    
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th class="table-item">Item</th>
+                                <th class="table-item">Preço</th>
+                                <th class="table-item">Quantidade</th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <!--
+                        <tr class="cart-product">
+                      <td class="product-identification">
+                        <img src="imagens/produto-talao.webp" alt="Talão" class="cart-product-image" width="150px" height="150px">
+                        <strong class="cart-product-title">Talão</strong>
+                      </td>
+                      <td>
+                        <span class="cart-product-price">R$6,99</span>
+                      </td>
+                      <td>
+                        <input type="number" value="2" min="0" class="product-qtd-input">
+                        <button type="button" class="remove-product-button">Remover</button>
+                      </td>
+                    </tr>
+                    -->
+                        </tbody>
+    
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="cart-total-container">
+                                    <strong>Total</strong>
+                                    <span>R$0,00</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+    
+                    <button type="button" class="purchase-button">Finalizar Compra</button>
+                    
+                </section>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <a href="index.html"><img src="imagens/logo2.png" width="200px" height="200px"></a>
+
+            </div>
+            <div>
+                <h3>Categorias</h3>
+
+                <a href="agenda.html">Agendas e Planners</a>
+                <br>
+                <a href="caderno.html">Cadernos</a>
+                <br>
+                <a href="canetas.html">Canetas</a>
+                <br>
+                <a href="livros.html">Livros</a>
+                <br>
+                <a href="decoracao.html">Decoração</a>
+                <br>
+                <a href="lapis.html">Lapis</a>
+                <br>
+                <a href="presentes.html">Presentes</a>
+
+            </div>
+            <div>
+                <h3>Conteúdo</h3>
+
+                <a href="index.html">Sobre</a>
+                <br>
+                <a href="index.html">Blog</a>
+                <br>
+                <a href="index.html">Novidades</a>
+                <br>
+                <a href="index.html">Trocas e devoluções</a>
+                <br>
+                <a href="index.html">Prazos de entrega</a>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+
+
+            </div>
+            <div>
+                <h3>Atendimento</h3>
+
+                <p>Telefone: (69) 3232-9988</p>
+                <p>Whatsapp: (69) 9232-9898</p>
+                <p>E-mail: vendas@mundodasletras.com.br</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="pague_selo_envio">
+
+            <div>
+                <p>Formas de pagamento</p>
+                <img src="imagens/icone-bandeiras.png">
+                <br>
+                <br>
+                <img src="imagens/pix-logo.png">
+                <img src="imagens/boleto-logo.png">
+            </div>
+            <div>
+                <p>Selos</p>
+                <img src="imagens/protegido.png">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <div>
+                <p>Formas de Envios</p>
+                <img src="imagens/envio-pac.webp">
+                <img src="imagens/sedex-sedex.webp">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
